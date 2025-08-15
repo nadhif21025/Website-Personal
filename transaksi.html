@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form Transaksi</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+<header>
+    <h1>Form Transaksi</h1>
+</header>
+
+<nav>
+   <div class="dropdown">
+  <button class="dropbtn">=</button>
+  <div class="dropdown-content">
+    <a href="index.html">Produk</a>
+    <a href="kontak.html">Kontak</a>
+  </div>
+</div>
+</nav>
+
+<div class="container">
+    <div class="sidebar"></div>
+    <div class="content">
+        <h2>Input Data Pembelian</h2>
+        <form onsubmit="prosesTransaksi(); return false;">
+            <label>Nama:</label><br>
+            <input type="text" id="nama" required><br><br>
+            <label>Alamat:</label><br>
+            <textarea id="alamat" required></textarea><br><br>
+            <label>Jumlah:</label><br>
+            <input type="number" id="jumlah" min="1" required><br><br>
+            <button type="submit">Checkout</button>
+        </form>
+    </div>
+    <div class="sidebar"></div>
+</div>
+
+<footer>
+    <marquee>Selamat datang di Toko Online kami!</marquee>
+</footer>
+</body>
+</html>
